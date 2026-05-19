@@ -1,0 +1,53 @@
+site_name: Team Finder API
+site_description: Documentation for the Team Finder API — a platform for finding project collaborators.
+site_author: Team Finder
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - content.code.copy
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Getting Started:
+    - Installation & Setup: getting-started/setup.md
+    - Configuration: getting-started/configuration.md
+  - Data Models: models.md
+  - API Reference:
+    - Authentication: api/auth.md
+    - Users: api/users.md
+    - Profiles: api/profiles.md
+    - Skills: api/skills.md
+    - Projects: api/projects.md
+    - Teams: api/teams.md
