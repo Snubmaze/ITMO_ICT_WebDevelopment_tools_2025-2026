@@ -22,4 +22,4 @@ jobs:
         run: pip install mkdocs-material
 
       - name: Deploy
-        run: mkdocs gh-deploy --force --config-file lab2/mkdocs.yml
+        run: mkdocs gh-deploy --force --config-file lab3/mkdocs.yml

@@ -1,0 +1,45 @@
+site_name: "Лаб. работа 3 — Docker, Парсер, Celery"
+site_description: "Упаковка FastAPI в Docker, HTTP-вызов парсера и асинхронная очередь задач через Celery + Redis"
+site_author: Pavel Polyarus
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/brightness-7
+        name: Тёмная тема
+    - scheme: slate
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/brightness-4
+        name: Светлая тема
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - content.code.copy
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - toc:
+      permalink: true
+
+nav:
+  - Обзор: index.md
+  - "Задача 1: Docker": task1.md
+  - "Задача 2: HTTP-вызов парсера": task2.md
+  - "Задача 3: Celery + Redis": task3.md
